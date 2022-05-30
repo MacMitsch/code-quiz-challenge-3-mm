@@ -52,6 +52,7 @@ body.wrong {
     background-color:cyan
     border: radius 5px;
     padding: 5px 10px;
+    font-size:1.5rem;
     outline:none;
 
 }
@@ -65,4 +66,23 @@ body.wrong {
 .btn.wrong {
 --hue:var(--hue-wrong);
 background-color: darkred;
+}
+.start-btn{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.next-btn{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
 }
