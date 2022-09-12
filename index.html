@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Code quiz</title>
-  </head>
-  <body>
-    <div class="container">
-      <div id="question-container" class="hide">
-        <div id="question">Question</div>
-        <div id="answer-buttons" class="btn-grid"></div>
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
-      </div>
-      <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start</button>
-        <button id="next-btn" class="next-btn btn hide">Next</button>
-      </div>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coding Quiz Challenge</title>
+    <!--Meta element to make media query function.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--This link element connects the index.html to the style.css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!--Link to high scores page-->
+    <a href="scores.html">View high scores</a>
+    <!--Wrapper-->
+    <div id="wrapper">
+        <!--Div for the timer-->
+        <div id="currentTime"></div>
+        <!--Quiz content-->
+        <div id="questionsDiv">
+            <!--Beginning of quiz-->
+            <h1> Coding Quiz Challenge</h1>
+            <p>Try to answer the following questions within the time limit.
+                Keep in mind that incorrect answers will penalize your score/time
+                by ten seconds!</p>
+            <ul id="choicesUl"></ul>
+            <!--This button initiates the timer & takes the user to the first question.-->
+            <button id="gameStart">Start Quiz</button>
+        </div>
     </div>
+    <!--This links the index.html to the script.js.-->
     <script src="script.js"></script>
-  </body>
+</body>
+<!--Keep in mind that some text in the mock-up will render through js-->
+
 </html>
