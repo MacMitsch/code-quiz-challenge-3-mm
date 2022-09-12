@@ -4,7 +4,7 @@ var Back= document.querySelector('#back');
 
 // event listener for Clearing the highscore.
 
-remove.addEventListener('click', function (){
+remove.addEventListener('click',  () => {
     localStorage.clear();
     location.reload();
 });
@@ -19,3 +19,7 @@ if (allscores !== null) {
         highScore.appendChild(createLi);
     }
 }
+// event listener for go back
+WebGLTransformFeedback.addEventListener('click', () => {
+window.location.replace("./index.html");
+});
