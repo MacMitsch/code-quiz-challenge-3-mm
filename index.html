@@ -5,20 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Coding Quiz Challenge</title>
-    <!--Meta element to make media query function.-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--This link element connects the index.html to the style.css-->
+    <!-- CSS link -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <!--Link to high scores page-->
     <a href="scores.html">View high scores</a>
-    <!--Wrapper-->
     <div id="wrapper">
-        <!--Div for the timer-->
         <div id="currentTime"></div>
-        <!--Quiz content-->
+        <!-- Quiz content -->
         <div id="questionsDiv">
             <!--Beginning of quiz-->
             <h1> Coding Quiz Challenge</h1>
@@ -26,13 +23,11 @@
                 Keep in mind that incorrect answers will penalize your score/time
                 by ten seconds!</p>
             <ul id="choicesUl"></ul>
-            <!--This button initiates the timer & takes the user to the first question.-->
+            <!--This button initiates the timer and starts quiz-->
             <button id="gameStart">Start Quiz</button>
         </div>
     </div>
     <!--This links the index.html to the script.js.-->
     <script src="script.js"></script>
 </body>
-<!--Keep in mind that some text in the mock-up will render through js-->
-
 </html>

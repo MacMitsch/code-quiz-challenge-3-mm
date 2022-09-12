@@ -1,6 +1,6 @@
 var highScore = document.querySelector('#highScore');
 var remove = document.querySelector('#remove');
-var Back= document.querySelector('#back');
+var back= document.querySelector('#back');
 
 // event listener for Clearing the highscore.
 
@@ -9,10 +9,10 @@ remove.addEventListener('click',  () => {
     location.reload();
 });
 
-var allScores = localStorage.getItem('Scores');
+var allScores = localStorage.getItem('allScores');
 allScores = JSON.parse(allScores);
 
-if (allscores !== null) {
+if (allScores !== null) {
     for (var i = 0; i<allScores.length; i++) {
         var createLi = document.createElement('li');
         createLi.textContent = allScores[i].initials + " " + allScores[i].score;
@@ -20,6 +20,6 @@ if (allscores !== null) {
     }
 }
 // event listener for go back
-WebGLTransformFeedback.addEventListener('click', () => {
+back.addEventListener('click', () => {
 window.location.replace("./index.html");
 });
