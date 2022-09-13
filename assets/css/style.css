@@ -1,6 +1,65 @@
+/* mobile response */
+@media screen and (max-width: 640px){
+    body{
+        min-width: 640px;
+    }
+    #wrapper {
+        position:absolute;
+        left:10%;
+    }
+    a {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 786px){
+    body{
+        min-width: 786px;
+    }
+    #wrapper {
+        position:absolute;
+        left:20%;
+    }
+    a {
+        margin-left: 10%;
+    }
+}
+
 
 body {
     font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+text-align: center;
+}
+
+li{
+    background-color: rgb(146, 25, 171);
+    margin-top: 10px;
+    padding: 5px 10px;
+    width: 80%;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    border-radius: 5px;
+}
+
+textarea {
+    width: 90%;
+    margin: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+    width:50%;
+    border: 1px solid rgb(164, 163, 163);
+}
+
+label {
+    margin-right: 10px;
 }
 
 #wrapper {
@@ -52,19 +111,15 @@ body {
     text-align: center;
 }
 
-button {
-    border-radius: 5px;
-}
-
-textarea {
-    width: 90%;
-    margin: 20px;
-}
-
 #Submit {
     background-color: rgb(146, 25, 171);
-    margin-left: 30%;
-    padding: 20px;
+    margin-left: 25vw;
+    padding: 5px 10px;
     font-size: 20px;
     color: rgb(0, 0, 0);
+}
+
+#makeDiv {
+    margin-top: 20px;
+    border-top: 1px solid rgb(164, 163, 163);
 }

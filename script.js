@@ -75,7 +75,7 @@ quizTimer.addEventListener("click",() => {
 
       if (timeLeft <= 0) {
         clearInterval(holdInterval);
-        allDone();
+        Done();
         currentTime.textContent = "Time's up!";
       }
     }, 1000);
@@ -88,9 +88,9 @@ function render(questionIndex) {
   ulCreate.innerHTML = "";
 
   for (var i = 0; i < questions.length; i++) {
-    var userQuestion = questions[questionIndex].title;
+    var userQuestions = questions[questionIndex].title;
     var userChoices = questions[questionIndex].choices;
-    questionsDiv.textContent = userQuestion;
+    questionsDiv.textContent = userQuestions;
   }
 
   userChoices.forEach(function (newItem) {
@@ -203,7 +203,7 @@ function Done() {
       allScores.push(finalScore);
       var newScore = JSON.stringify(allScores);
       localStorage.setItem("allScores", newScore);
-      
+
     // reroute users to scores.html after submitting initials
       window.location.replace("scores.html");
     }
